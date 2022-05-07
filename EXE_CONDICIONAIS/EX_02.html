@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento de Salário</title>
+</head>
+<body>
+     <h2><center>Aumento salárial</center></h2>
+
+        <script>
+
+        let salario = Number(prompt("Digite seu salário:"))
+
+       if(salario <=280){
+        percentual = 20/100;
+        aumento = salario * percentual;
+        salario_novo= salario + aumento;
+            
+        alert (` Salário antigo: R$${salario}.\n Percentual aplicado: 20%. \n Valor do aumento: ${aumento}. \n Novo salário: ${salario_novo}.`)
+        }
+      
+        else if (( salario =>280) && ( salario <= 700 )){
+  
+        percentual = 15/100;
+        aumento = salario * percentual;
+        salario_novo= salario + aumento;
+     
+        alert (` Salário antigo: R$${salario}.\n Percentual aplicado: 15%. \n Valor do aumento: ${aumento}. \n Novo salário: ${salario_novo}.`)
+
+        }
+
+        else if (( salario =>700) && ( salario <= 1500 )){
+  
+        percentual = 10/100;
+        aumento = salario * percentual;
+        salario_novo= salario + aumento;
+
+        alert (` Salário antigo: R$${salario}.\n Percentual aplicado: 10%. \n Valor do aumento: ${aumento}. \n Novo salário: ${salario_novo}.`)
+
+        }
+
+        else if ( salario >1500){
+  
+        percentual = 5/100;
+        aumento = salario * percentual;
+        salario_novo= salario + aumento;
+
+        alert (` Salário antigo: R$${salario}.\n Percentual aplicado: 5%. \n Valor do aumento: ${aumento}. \n Novo salário: ${salario_novo}.`)
+
+        }
+        </script>
+
+</body>
+</html>
