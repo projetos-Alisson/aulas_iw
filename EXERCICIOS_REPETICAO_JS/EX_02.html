@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <!--Supondo que a população de um país A seja da ordem de  800000 habitantes 
+        com uma taxa anual de crescimento de 3% e que a população B seja 200000 habitantes
+        com uma taxa de crescimento de 1.5%. Calcule quantos anos são necessários para que a
+         população A se iguale ou ultrapasse a B.-->
+         
+     <script>
+     
+     //VARIÁVEIS
+
+     let A = 80000
+     let B = 200000
+     let anos = 0
+
+    //LAÇO
+
+     while(A < B){
+        
+        A = A + (A / 100) * 3
+        B = B + (B / 100) * 1.5
+
+        anos +=1         
+     }
+     alert(`Serão necessários ${anos} ano(s) para que a população do país A se iguale ou ultrapasse a do país B`)
+
+
+     </script>
+</body>
+</html>
