@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Validation</h2>
+
+<p>Digite seu ano de nascimento:</p>
+
+<input id="numb" name="ano">
+<button type="button" onclick="mensagem()">OK</button>
+<p id="demo"></p>
+
+<p>Escolha o sexo:</p>
+
+<form>
+  <input type="radio" id="m" name="sexo" value="MASCULINO" id="masculino">
+  <label for="masculino">Masculino</label><br>
+  <input type="radio" id="f" name="sexo" value="FEMININO" id="feminino">
+  <label for="feminino">Feminino</label><br>
+</form>
+<p id="most"></p>
+
+<p>Calcular:</p>
+
+<script>
+
+document.getElemetById("botao").onclick = function(){
+var radios = document.getElementsByName("sexo")
+var ano = (document.getElementById('ano')).value
+for (var i = 0; i <radios.length; i++) {
+   if (radios[i].checked) {
+       var escolha = radios[i].value
+       console.log("Escolheu:" + escolha);
+       resultado(escolha,ano)
+   }
+
+}
+
+}
+
+function calcular(){
+    var idade = 2022-(parseInt(ano))
+    console.log(idade)
+  
+    
+
+}
+
+</script>
+
+</body>
+</html>
